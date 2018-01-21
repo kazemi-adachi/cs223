@@ -2,7 +2,7 @@
 
 /* print the numbers from 1 to 10 */
 
-int main(int argc, char **argv) {
+int main(void) {
   int i;
 
   puts("Now I will count from 1 to 10");
@@ -10,5 +10,6 @@ int main(int argc, char **argv) {
     printf("%d\n", i);
    }
 
+  printf("HI\n");
   return 0;
 }
