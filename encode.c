@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
 			if(letter_count <= WORDLEN && letter_count) {				// if the word length is three letters or shorter, add 'an' to the end
 				putchar('a');
 				putchar('n');
-			} else {									// else, add 'o' to the end of the word
+			} else if(letter_count) {									// else, add 'o' to the end of the word
 				putchar('o');
 			}
 			putchar(c);									// print the non-alphabetical character
