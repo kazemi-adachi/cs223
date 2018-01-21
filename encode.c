@@ -56,8 +56,9 @@ int main(int argc, char **argv) {
 			} else {									// else, add 'o' to the end of the word
 				putchar('o');
 			}
-			putchar('c');								// print the non-alphabetical character
+			putchar(c);									// print the non-alphabetical character
 			letter_count = 0;							// reset the letter count
+			first_letter = '\0';
 		}
 	}
 	return 0;
