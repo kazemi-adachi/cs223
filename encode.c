@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
 			}
 		} else {										// non alphabetical characters signal the end of the word
 			letter_count == 1 ? putchar(first_letter) : putchar(tolower(first_letter));					// if the word is one letter long, print the first letter as is, else, print the formerly first letter lowercase
-			if(letter_count <= WORDLEN) {				// if the word length is three letters or shorter, add 'an' to the end
+			if(letter_count <= WORDLEN && letter_count) {				// if the word length is three letters or shorter, add 'an' to the end
 				putchar('a');
 				putchar('n');
 			} else {									// else, add 'o' to the end of the word
